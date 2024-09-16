@@ -15,7 +15,7 @@ class_names = [
     "wrapper-puport"
 ]
 
-def web_scrape_divs(url, div_classes=None, div_id=None):
+def web_scrape_divs(url, div_classes=class_names, div_id=None):
     try:
         # Send a GET request to the URL
         response = requests.get(url)
